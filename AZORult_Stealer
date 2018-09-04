@@ -1,0 +1,18 @@
+################################################
+## Title: AZORult Stealer v2 Botnet - SQL injection
+## Credit: Muhammad Haidari
+## Date: 2018-09-03
+## Author website: http://www.mhaidari.com
+## gitgub Repo: https://github.com/Muhammd/AZORult-Stealer-2
+## Tested on: Windows_OS
+## Product URL: https://www.rekings.com/shop/azorult-stealer/
+## Product Name: 'AZORult Stealer v2 Botnet'
+##  PoC:
+##  https://github.com/Muhammd/AZORult-Stealer-2/poc.jpg
+################################################
+#
+# --Method=GET -p [search]
+#
+#  -u "
+http://127.0.0.1/index.php?status=0&datefrom=&dateup=&search=a[SQLI]&cookiesearch=&page=reports
+"
